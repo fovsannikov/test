@@ -1,0 +1,12 @@
+contract ERC20 is IERC20 {
+
+    mapping(address => uint256) public override balanceOf;
+
+    mapping(address => mapping(address => uint256)) public override allowance;
+
+    uint256 public override totalSupply;   // 
+    string public name;   // 
+    string public symbol;  //
+    
+    uint8 public decimals = 18; // 
+    address public owner;
